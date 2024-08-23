@@ -13,6 +13,9 @@ public class DragPanel extends JPanel {
     DragPanel(){
         imageCorner = new Point(0,0);
         ClickListener clickListener = new ClickListener();
+        DragListener dragListener = new DragListener();
+        this.addMouseListener(clickListener);
+        this.addMouseMotionListener(dragListener);
 
     }
 
