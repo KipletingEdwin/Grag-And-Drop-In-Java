@@ -19,7 +19,9 @@ public class DragPanel extends JPanel {
 
     }
 
-    public  void paintComponent(){
+    public  void paintComponent(Graphics g){
+        super.paintComponent(g);
+        image.paintIcon(this,g,imageCorner.getX(),imageCorner.getY());
 
     }
 
