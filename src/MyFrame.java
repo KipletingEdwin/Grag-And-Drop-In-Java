@@ -4,6 +4,8 @@ public class MyFrame extends JFrame {
 
     MyFrame(){
         this.setTitle("Drag & Drop demo");
+        this.setSize(600,600);
+
 
 
     }
