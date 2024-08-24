@@ -38,6 +38,14 @@ public class DragPanel extends JPanel {
         public  void  mouseDragged(MouseEvent e){
             Point currentPt = e.getPoint();
 
+            imageCorner.translate(
+                    (int)(currentPt.getX() - prevPt.getX()),
+                    (int)(currentPt.getY() - prevPt.getY())
+
+            );
+            prevPt = currentPt;
+            repaint();
+
         }
 
     }
