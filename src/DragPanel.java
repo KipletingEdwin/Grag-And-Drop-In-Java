@@ -35,6 +35,10 @@ public class DragPanel extends JPanel {
     }
 
     private  class DragListener extends MouseMotionAdapter{
+        public  void  mouseDragged(MouseEvent e){
+            Point currentPt = e.getPoint();
+
+        }
 
     }
 
